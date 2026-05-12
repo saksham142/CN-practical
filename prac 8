@@ -1,0 +1,58 @@
+# Practical 8 — Connection Between Devices Using Router
+
+## Devices
+- 1 Router (1941)
+- 2 PCs
+
+## Cable Used
+- Copper Straight-Through Cable
+
+---
+
+# Connections
+
+| Device | Router Port |
+|---|---|
+| PC0 | GigabitEthernet0/0 |
+| PC1 | GigabitEthernet0/1 |
+
+---
+
+# PC0 Configuration
+
+IP Address: 192.168.1.2  
+Subnet Mask: 255.255.255.0  
+Default Gateway: 192.168.1.1
+
+---
+
+# PC1 Configuration
+
+IP Address: 192.168.2.2  
+Subnet Mask: 255.255.255.0  
+Default Gateway: 192.168.2.1
+
+---
+
+# Router Commands
+
+```bash
+enable
+configure terminal
+
+interface gigabitEthernet0/0
+ip address 192.168.1.1 255.255.255.0
+no shutdown
+exit
+
+interface gigabitEthernet0/1
+ip address 192.168.2.1 255.255.255.0
+no shutdown
+exit
+
+exit
+
+copy running-config startup-config
+
+ping test
+ping 192.168.2.2
