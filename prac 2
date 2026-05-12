@@ -1,0 +1,29 @@
+# Practical 2 — PC to PC Communication
+
+## Devices
+- 2 PCs
+- Copper Cross-Over Cable
+
+## Steps
+1. Add PC0 and PC1
+2. Connect using Copper Cross-Over
+3. Configure IPs
+
+### PC0
+IP: 192.168.1.1  
+Subnet: 255.255.255.0
+
+### PC1
+IP: 192.168.1.2  
+Subnet: 255.255.255.0
+
+4. Ping Test
+
+```cmd
+ping 192.168.1.2
+
+
+
+
+OUTPUT 
+Packets: Sent = 4, Received = 4, Lost = 0
