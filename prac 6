@@ -1,0 +1,52 @@
+# Practical 6 — Initial Router Configuration
+
+## Devices
+- 1 Router (1941)
+- 1 PC
+
+## Cable Used
+- Copper Straight-Through Cable
+
+## Connection
+PC FastEthernet0 ↔ Router GigabitEthernet0/0
+
+---
+
+# PC Configuration
+
+| Field | Value |
+|---|---|
+| IP Address | 192.168.1.2 |
+| Subnet Mask | 255.255.255.0 |
+| Default Gateway | 192.168.1.1 |
+
+---
+
+# Router Commands
+
+```bash
+enable
+
+configure terminal
+
+hostname SAKSHAM
+
+interface gigabitEthernet0/0
+ip address 192.168.1.1 255.255.255.0
+no shutdown
+exit
+
+enable password cisco
+
+line console 0
+password class
+login
+exit
+
+exit
+
+copy running-config startup-config
+
+
+cmd 
+ping 192.168.1.1
