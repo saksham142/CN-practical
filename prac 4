@@ -1,0 +1,57 @@
+# Practical 4 — Network Topologies
+
+---
+
+# 1. BUS TOPOLOGY
+
+## Devices
+- 1 Hub
+- 4 PCs
+
+## Cable Used
+- Copper Straight-Through Cable
+
+## Structure
+PCs connected to Hub (shared backbone representation).
+
+## IPs
+- 192.168.1.1
+- 192.168.1.2
+- 192.168.1.3
+- 192.168.1.4
+
+Subnet Mask:
+255.255.255.0
+
+## Ping
+```cmd
+ping 192.168.1.4
+
+
+ring 
+cross over cable
+PC0 —— PC1
+ |       |
+PC3 —— PC2
+
+
+tree 
+ Copper Straight-Through Cable
+        Switch0
+        /    \
+   Switch1  Switch2
+    /   \     /   \
+  PC0  PC1  PC2  PC3
+
+
+
+  mesh
+  cross over cable
+  
+PC0 ↔ PC1
+PC0 ↔ PC2
+PC0 ↔ PC3
+PC1 ↔ PC2
+PC1 ↔ PC3
+PC2 ↔ PC3
+
