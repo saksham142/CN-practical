@@ -23,3 +23,7 @@ Subnet Mask:
 
 
 cmd ping 192.168.1.4
+
+OUTPUT
+
+Packets: Sent = 4, Received = 4, Lost = 0
