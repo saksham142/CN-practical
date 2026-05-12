@@ -1,0 +1,47 @@
+# Practical 7 — Client Server Network
+
+## Devices
+- 1 Switch (2960)
+- 1 Server
+- 2 PCs
+
+## Cable Used
+- Copper Straight-Through Cable
+
+---
+
+# Connections
+
+| Device | Switch Port |
+|---|---|
+| PC0 | Fa0/1 |
+| PC1 | Fa0/2 |
+| Server | Fa0/3 |
+
+---
+
+# Server Configuration
+
+| Field | Value |
+|---|---|
+| IP Address | 192.168.1.10 |
+| Subnet Mask | 255.255.255.0 |
+
+---
+
+# PC Configurations
+
+## PC0
+IP: 192.168.1.1  
+Subnet: 255.255.255.0
+
+## PC1
+IP: 192.168.1.2  
+Subnet: 255.255.255.0
+
+---
+
+# Ping Test
+
+```cmd
+ping 192.168.1.10
