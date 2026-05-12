@@ -1,0 +1,104 @@
+# Practical 1 — Basic Network Commands
+
+---
+
+# 1. ipconfig
+
+## Purpose
+Shows IP configuration of device.
+
+## Command
+```cmd
+ipconfig
+Output Includes
+IPv4 Address
+Subnet Mask
+Default Gateway
+2. ping
+Purpose
+
+Checks connectivity between two devices.
+
+Command
+ping 192.168.1.1
+Successful Output
+Reply from 192.168.1.1
+Packets: Sent = 4, Received = 4, Lost = 0
+3. tracert
+Purpose
+
+Shows route/path taken by packets.
+
+Command
+tracert 192.168.1.1
+4. netstat
+Purpose
+
+Displays active network connections.
+
+Command
+netstat
+5. arp -a
+Purpose
+
+Displays ARP table.
+
+Command
+arp -a
+6. hostname
+Purpose
+
+Displays system/device name.
+
+Command
+hostname
+7. cls
+Purpose
+
+Clears command prompt screen.
+
+Command
+cls
+8. help
+Purpose
+
+Displays all available CMD commands.
+
+Command
+help
+Basic Configuration Commands (Router/Switch)
+enable
+
+Enters privileged EXEC mode.
+
+enable
+configure terminal
+
+Enters global configuration mode.
+
+configure terminal
+hostname
+
+Changes device hostname.
+
+hostname SAKSHAM
+interface
+
+Selects interface for configuration.
+
+interface gigabitEthernet0/0
+ip address
+
+Assigns IP address to interface.
+
+ip address 192.168.1.1 255.255.255.0
+no shutdown
+
+Activates interface.
+
+no shutdown
+exit
+
+Exits current mode.
+
+exit
